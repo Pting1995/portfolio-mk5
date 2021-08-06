@@ -1,0 +1,63 @@
+.btn-group {
+  display: flex;
+  text-decoration: none;
+
+  .btn {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1rem;
+    // text-transform: uppercase;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    &.align-left {
+      margin-right: auto;
+    }
+
+    &.align-center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &.align-right {
+      margin-left: auto;
+    }
+
+    @include bp-tablet {
+      &.align-right,
+      &.align-left {
+          margin-left: auto;
+      margin-right: auto;
+      }
+    }
+
+    @each $color, $code in $color-palette {
+      &.has-#{$color}-text {
+        color: $code;
+      }
+      &.has-#{$color}-bg-color {
+        background-color: $code;
+        &:hover {
+          background-color: darken($code, 20%);
+        }
+      }
+
+      &.has-#{$color}-outline-color {
+        border: 2px solid $code;
+        color: $code;
+        &:hover {
+          border: 2px solid map-get($color-palette, tertiary);
+        }
+      }
+    }
+
+  }
+}
+

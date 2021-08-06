@@ -47,8 +47,10 @@ $color-palette: (
   primary: #b9faf8,
   secondary: #b8d0eb,
   // tertiary: 
+  // primary: white,
+  // secondary: black,
   light: #ffffff,
-  dark: #000000,
+  dark: rgb(59, 78, 114),
 );
 
 @each $color, $code in $color-palette {

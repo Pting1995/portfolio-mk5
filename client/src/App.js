@@ -1,6 +1,7 @@
 import React from "react";
 import AboutMe from "./components/aboutMe.js"
-import Projects from "./components/featuredProjects.js"
+import ProjectCard from "./components/projectCard.js"
+import ProjectList from "./components/projectList.json"
 
 function App() {
   return (
@@ -11,7 +12,18 @@ function App() {
           <AboutMe />
         </section>
         <section className="projects">
-          <Projects />
+          {ProjectList.map((project, index) => {
+            return (<ProjectCard
+              key={index}
+              projectName={project.projectName}
+              skillsShowcased={project.skillsShowcased}
+              projectDescription={project.projectDescription}
+              imgName={project.imgName}
+              gifName={project.gifName}
+              deployedLink={project.deployedLink}
+              gitHubLink={project.gitHubLink}
+            />)
+          })}
         </section>
       </main>
     </div>

@@ -68,6 +68,17 @@ main {
   @include bp-tablet {
     grid-template-columns: 1fr;
   }
+
+  .about-me .card {
+    position: sticky;
+    top: 1rem;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
   
   .card {
     background-color: map-get($color-palette, dark);
@@ -82,4 +93,9 @@ main {
 
 .text-center {
   text-align: center;
+}
+
+#btn-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

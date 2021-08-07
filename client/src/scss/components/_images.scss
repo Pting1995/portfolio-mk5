@@ -1,11 +1,4 @@
 img {
     width: 100%;
     height: auto;
-    .static-img {
-        position: absolute;
-        &:hover {
-            opacity: 0;
-        }
-    }
-
 }

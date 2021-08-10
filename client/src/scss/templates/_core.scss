@@ -5,7 +5,7 @@ html {
 body {
   position: relative;
   font-family: $font-stack;
-  background-color: map-get($color-palette, primary);
+  background-color: map-get($color-palette, black);
   color: map-get($color-palette, light);
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ body {
     height: 100vh;
     width: 200vh;
     
-    background-color: map-get($color-palette, secondary);
+    background-color: map-get($color-palette, black);
     transform: skew(-33deg);
 
     z-index: -1000  ;
@@ -53,7 +53,7 @@ figure {
 
 
 body {
-  max-width: 1200px;
+  max-width: 1400px;
 
   margin: 0 auto;
 }
@@ -73,21 +73,29 @@ main {
     position: sticky;
     top: 1rem;
   }
-
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
   
   .card {
-    background-color: map-get($color-palette, dark);
+    background-color: map-get($color-palette, black);
 
+    border: map-get($color-palette, tertiary) 1px solid;
     border-radius: 15px;
   
     margin: 1rem;
     padding: 1rem;
     margin: 0 auto;
+  }
+}
+.has-one-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.has-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  @include bp-tablet {
+    grid-template-columns: 1fr;
   }
 }
 

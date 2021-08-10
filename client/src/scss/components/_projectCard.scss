@@ -1,26 +1,17 @@
-.project {
-    .has-two-col {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-
-        padding: 1rem 0;
-        @include bp-tablet {
-            grid-template-columns: 1fr;
-        }
-    }
+.projects {
     section {
-            margin: auto 0
+        margin: auto 0
     }
     h2 {
         margin-top: 0;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
     }
     h3 {
+        margin-top: 1rem;
         margin-bottom: 0;
     }
     p {
-        margin: 0;
+        margin: 1rem 0;
         @include bp-tablet {
             margin: 0
         }
@@ -28,17 +19,23 @@
 
     // play gif on hover
     figure {
-        position: relative;
+        // position: relative;
 
         .static-img {
-        position: absolute;
-        // max-width: 100%;
-        // height: auto;
-        object-fit: contain;
-        &:hover {
-            display: none;
+            object-position: 50% 50%;
+            object-fit: cover;
+            transition: transform .2s;
+            
+            height: auto;
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            &:hover {
+                transform: scale(1.05, 1.10) translateY(0rem);
+                cursor: pointer;
+                // display: none;
+            }
         }
-    }
     }
     
 }

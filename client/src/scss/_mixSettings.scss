@@ -46,11 +46,12 @@ $font-stack: 'Quicksand', sans-serif;
 $color-palette: (
   primary: #b9faf8,
   secondary: #b8d0eb,
-  // tertiary: 
+  tertiary: rgb(14,202,240),
   // primary: white,
   // secondary: black,
   light: #ffffff,
   dark: rgb(59, 78, 114),
+  black: black
 );
 
 @each $color, $code in $color-palette {

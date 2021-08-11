@@ -16,6 +16,7 @@ function Home() {
                         return (<ProjectCard
                             key={index}
                             projectName={project.projectName}
+                            url={project.url}
                             skillsShowcased={project.skillsShowcased}
                             projectDescription={project.projectDescription}
                             imgName={project.imgName}

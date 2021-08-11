@@ -19,23 +19,15 @@
 
     // play gif on hover
     figure {
-        // position: relative;
-
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
         .static-img {
-            object-position: 50% 50%;
-            object-fit: cover;
-            transition: transform .2s;
-            
-            height: auto;
-            width: 100%;
-            border-radius: 15px;
-            overflow: hidden;
+            transition: transform .3s;
             &:hover {
-                transform: scale(1.05, 1.10) translateY(0rem);
+                transform: scale(1.1) translateY(0rem);
                 cursor: pointer;
-                // display: none;
             }
         }
     }
-    
 }

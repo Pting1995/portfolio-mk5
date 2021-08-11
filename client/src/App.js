@@ -1,20 +1,21 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/home";
+import Project from "./pages/project";
 
 function App() {
   return (
     <>
-      <Router forceRefresh>
+      <Router>
         {/* <Header /> */}
 
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
-          {/* <Route exact path={"/et/:subject"}>
-            <ET />
-          </Route> */}
+          <Route exact path={"/project/:project"}>
+            <Project />
+          </Route>
         </Switch>
 
         {/* <Footer /> */}

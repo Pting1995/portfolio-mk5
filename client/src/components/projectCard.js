@@ -1,32 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import ImgDB from "./imgDB"
 
 function projectCard(props) {
+    const [project, setProject] = useState()
+
+    useEffect(() => {
+        return setProject(props)
+    });
+
+    console.log(project)
     return (
         <>
-            <div>
+            <div className={props.className}>
                 <div className="card">
                     <article className="project">
-                        <h2>{props.projectName}</h2>
+                        <h2>Project: {props.projectName}</h2>
                         <figure>
                             <ImgDB imgName={props.imgName} />
-                            {/* <ImgDB imgName={props.gifName} /> */}
-                        </figure>
-                        <div>
-                            {/* <h3>{props.skillsShowcased}</h3> */}
-                            {/* <section>
-                                <p>{props.projectDescription}</p>
-                            </section> */}
-                        </div>
 
+
+                        </figure>
                     </article>
-                    {/* <div className="btn-group" id="btn-grid">
-                        <a className="btn has-dark-text has-primary-bg-color" href={props.gitHubLink}>GitHub Repo</a>
-                        <a className="btn has-dark-text has-primary-bg-color" href={props.deployedLink}>Live Site</a>
-                    </div> */}
                 </div>
             </div>
-
         </>
     );
 }

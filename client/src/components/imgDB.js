@@ -1,4 +1,4 @@
-const imagePath = "./images/";
+const imagePath = "../images/";
 
 const imageJson = [
   {

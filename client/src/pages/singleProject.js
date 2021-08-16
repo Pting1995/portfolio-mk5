@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import AboutMe from "../components/aboutMe";
+import ImgDB from "../components/imgDB"
 
 function SingleProjectPage(props) {
 
+    const [projectIndex, setProjectIndex] = useState(0)
+
     let { projectName } = useParams()
-    // console.log(props)
 
     let projectList = props.projectList
 
@@ -20,12 +22,12 @@ function SingleProjectPage(props) {
     }
 
     useEffect(() => {
-        findProject(projectName, projectList);
+        setProjectIndex(findProject(projectName, projectList))
+        console.log(projectIndex)
     });
 
-
-
     return (
+
         <div className="App">
             <div className="background-slice" />
             <main>
@@ -35,15 +37,15 @@ function SingleProjectPage(props) {
 
                 <section className="project">
                     <figure>
-                        {/* <ImgDB imgName={props.gifName} /> */}
+                        <ImgDB imgName={props.projectList[projectIndex].gifName} />
                     </figure>
-                    <h3>{props.skillsShowcased}</h3>
+                    <h3>{props.projectList[projectIndex].skillsShowcased}</h3>
                     <section>
-                        <p>{props.projectDescription}</p>
+                        <p>{props.projectList[projectIndex].projectDescription}</p>
                     </section>
                     <div className="btn-group" id="btn-grid">
-                        <a className="btn has-dark-text has-primary-bg-color" href={props.gitHubLink}>GitHub Repo</a>
-                        <a className="btn has-dark-text has-primary-bg-color" href={props.deployedLink}>Live Site</a>
+                        <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].gitHubLink}>GitHub Repo</a>
+                        <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].deployedLink}>Live Site</a>
                     </div>
                 </section>
             </main>

@@ -1,27 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Link } from "react-router-dom";
 import ImgDB from "./imgDB"
 
 function projectCard(props) {
-    const [project, setProject] = useState()
 
-    useEffect(() => {
-        return setProject(props)
-    });
-
-    console.log(project)
     return (
         <>
             <div className={props.className}>
-                <div className="card">
-                    <article className="project">
-                        <h2>Project: {props.projectName}</h2>
-                        <figure>
-                            <ImgDB imgName={props.imgName} />
+                <Link to={`/project/${props.url}`}>
+                    <div className="card">
+                        <article className="project">
+                            <h2>Project: {props.projectName}</h2>
+                            <figure>
+                                <ImgDB imgName={props.imgName} />
+                            </figure>
+                        </article>
+                    </div>
+                </Link>
 
-
-                        </figure>
-                    </article>
-                </div>
             </div>
         </>
     );

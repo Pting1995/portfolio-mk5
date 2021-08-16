@@ -1,13 +1,31 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import AboutMe from "../components/aboutMe";
-import ProjectList from "../components/projectList.json";
-import ImgDB from "../components/imgDB";
 
-function ProjectPage(props) {
-    console.log(props)
+function SingleProjectPage(props) {
+
+    let { projectName } = useParams()
+    // console.log(props)
+
+    let projectList = props.projectList
+
+    function findProject(projectName, projectList) {
+
+        for (var i = 0; i < projectList.length; i++) {
+
+            if (projectName == projectList[i].url) {
+                return (i)
+            }
+        }
+    }
+
+    useEffect(() => {
+        findProject(projectName, projectList);
+    });
+
+
+
     return (
-
         <div className="App">
             <div className="background-slice" />
             <main>
@@ -33,4 +51,4 @@ function ProjectPage(props) {
     );
 }
 
-export default ProjectPage;
+export default SingleProjectPage;

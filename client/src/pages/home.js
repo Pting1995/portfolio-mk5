@@ -1,9 +1,9 @@
 import React from "react";
 import AboutMe from "../components/aboutMe.js"
 import ProjectCard from "../components/projectCard.js"
-import ProjectList from "../components/projectList.json"
 
-function Home() {
+function Home(props) {
+    console.log(props)
     return (
         <div className="App">
             <div className="background-slice" />
@@ -12,7 +12,7 @@ function Home() {
                     <AboutMe />
                 </section>
                 <section className="projects has-two-col">
-                    {ProjectList.map((project, index) => {
+                    {props.projectList.map((project, index) => {
                         return (<ProjectCard
                             key={index}
                             projectName={project.projectName}

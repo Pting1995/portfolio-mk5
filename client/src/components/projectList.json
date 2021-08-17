@@ -7,8 +7,7 @@
         "imgName": "danielle-png",
         "gifName": "danielle-gif",
         "deployedLink": "https://danielle-m-estrella.herokuapp.com/",
-        "gitHubLink": "https://github.com/Pting1995/business.builder",
-        "className": "featured"
+        "gitHubLink": "https://github.com/Pting1995/business.builder"
     },
     {
         "projectName": "Database Crawler",
@@ -18,8 +17,7 @@
         "imgName": "database-crawler-png",
         "gifName": "database-crawler-gif",
         "deployedLink": "https://ancient-wave-96254.herokuapp.com/",
-        "gitHubLink": "https://github.com/Pting1995/Database-Crawler",
-        "className": "featured"
+        "gitHubLink": "https://github.com/Pting1995/Database-Crawler"
     },
     {
         "projectName": "Fun Finder",

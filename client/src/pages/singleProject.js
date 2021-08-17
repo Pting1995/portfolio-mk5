@@ -44,8 +44,8 @@ function SingleProjectPage(props) {
                         <p>{props.projectList[projectIndex].projectDescription}</p>
                     </section>
                     <div className="btn-group" id="btn-grid">
-                        <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].gitHubLink}>GitHub Repo</a>
-                        <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].deployedLink}>Live Site</a>
+                        <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank">GitHub Repo</a>
+                        <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].deployedLink} target="_blank">Live Site</a>
                     </div>
                 </section>
             </main>

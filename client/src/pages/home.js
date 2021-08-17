@@ -8,9 +8,6 @@ function Home(props) {
         <div className="App">
             <div className="background-slice" />
             <main>
-                <section className="about-me">
-                    <AboutMe />
-                </section>
                 <section className="projects has-two-col">
                     {props.projectList.map((project, index) => {
                         return (<ProjectCard

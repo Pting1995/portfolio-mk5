@@ -5,7 +5,7 @@ html {
 body {
   position: relative;
   font-family: $font-stack;
-  background-color: map-get($color-palette, black);
+  background-color: map-get($color-palette, dark);
   color: map-get($color-palette, light);
   margin: 0;
   padding: 0;
@@ -45,15 +45,6 @@ body {
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 1rem;
-
-  padding: 1rem;
-
-  @include bp-tablet {
-    grid-template-columns: 1fr;
-  }
 
   .about-me .card {
     position: sticky;
@@ -61,13 +52,10 @@ main {
   }
   
   .card {
-    background-color: map-get($color-palette, black);
-
-    border: map-get($color-palette, tertiary) 1px solid;
-    border-radius: 15px;
+    background-color: map-get($color-palette, dark);
   
-    margin: 1rem;
-    padding: 1rem;
+    // margin: 1rem;
+    // padding: 1rem;
     margin: 0 auto;
   }
 }

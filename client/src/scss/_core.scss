@@ -1,0 +1,63 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: $font-stack;
+  background-color: map-get($color-palette, dark);
+  color: map-get($color-palette, light);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 16px;
+  @include bp-tablet {
+    font-size: 14px;
+  }
+  @include bp-mobile {
+    font-size: 12px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 1600px;
+
+  margin: 0 auto;
+}
+
+.has-two-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  @include bp-tablet {
+    grid-template-columns: 1fr;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+#btn-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

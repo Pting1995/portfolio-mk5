@@ -1,18 +1,21 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/home";
+import AllProjects from "./pages/allProjects";
 import SingleProject from "./pages/singleProject";
+import Header from "./components/header";
+
 import projectList from "./components/projectList.json"
+
 
 function App() {
   return (
     <>
       <Router>
-        {/* <Header /> */}
+        <Header />
 
         <Switch>
           <Route exact path="/">
-            <Home projectList={projectList} />
+            <AllProjects projectList={projectList} />
           </Route>
           <Route exact path={"/project/:projectName"}>
             <SingleProject projectList={projectList} />

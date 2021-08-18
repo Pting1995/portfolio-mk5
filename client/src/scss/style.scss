@@ -2,10 +2,11 @@
 @import "mixSettings";
 
 // Importing Google Font
-@import "templates/fonts";
+@import "fonts";
 
 // Components
-@import "templates/core";
+@import "core";
 @import "components/images";
 @import "components/projectCard";
 @import "components/buttons";
+@import "components/header";

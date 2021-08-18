@@ -1,40 +1,34 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-// logos and nav
 function Header() {
     return (
         <>
             <header>
                 <nav>
                     <ul className="navbar">
-                        <li className="nav-logo">
-                            <a className="logo" href="/">
-                                <span>PinDrop Network</span>
+                        <li>
+                            <a className="myName" href="/">
+                                <span>Peter Ting</span>
                             </a>
                         </li>
                     </ul>
 
                     <ul className="navbar primary-nav">
                         <li>
-                            <NavLink exact to="/">
-                                Home
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink exact activeClassName="active" to="/tech">
-                                Tech
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink exact activeClassName="active" to="/et/overview">
-                                ET
+                            <NavLink exact activeClassName="active" to="/">
+                                Projects
                             </NavLink>
                         </li>
                         <li>
                             <NavLink exact activeClassName="active" to="/about">
-                                About
+                                About Me
                             </NavLink>
+                        </li>
+                        <li>
+                            <a href="/assets/Resume.pdf" target="_blank" rel="noreferrer">
+                                Resume
+                            </a>
                         </li>
                     </ul>
                 </nav>

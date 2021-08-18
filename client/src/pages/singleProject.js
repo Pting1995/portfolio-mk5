@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import AboutMe from "../components/aboutMe";
 import ImgDB from "../components/imgDB"
 
 function SingleProjectPage(props) {
@@ -29,24 +28,19 @@ function SingleProjectPage(props) {
     return (
 
         <div className="App">
-            <div className="background-slice" />
             <main>
-                <section className="about-me">
-                    <AboutMe />
-                </section>
-
                 <section className="project">
-                    <figure>
-                        <ImgDB imgName={props.projectList[projectIndex].gifName} />
-                    </figure>
-                    <h3>{props.projectList[projectIndex].skillsShowcased}</h3>
+
                     <section>
+                        <h3>{props.projectList[projectIndex].skillsShowcased}</h3>
+
                         <p>{props.projectList[projectIndex].projectDescription}</p>
+
+                        <div className="btn-group" id="btn-grid">
+                            <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank">GitHub Repo</a>
+                            <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].deployedLink} target="_blank">Live Site</a>
+                        </div>
                     </section>
-                    <div className="btn-group" id="btn-grid">
-                        <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank">GitHub Repo</a>
-                        <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].deployedLink} target="_blank">Live Site</a>
-                    </div>
                 </section>
             </main>
         </div>

@@ -54,8 +54,7 @@ main {
   .card {
     background-color: map-get($color-palette, dark);
   
-    // margin: 1rem;
-    // padding: 1rem;
+    // border: 2px solid map-get($color-palette, tertiary);
     margin: 0 auto;
   }
 }

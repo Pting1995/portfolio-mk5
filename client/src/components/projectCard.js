@@ -10,7 +10,7 @@ function projectCard(props) {
                 <Link to={`/project/${props.url}`}>
                     <div className="card">
                         <article className="project">
-                            <h2>Project: {props.projectName}</h2>
+                            {/* <h2>Project: {props.projectName}</h2> */}
                             <figure>
                                 <ImgDB imgName={props.imgName} />
                             </figure>

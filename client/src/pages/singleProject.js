@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ImgDB from "../components/imgDB"
+import VideoDB from "../components/videoDB"
 
 function SingleProjectPage(props) {
 
@@ -30,7 +30,7 @@ function SingleProjectPage(props) {
         <div className="App">
             <main>
                 <section className="project">
-
+                    <VideoDB videoName={props.projectList[projectIndex].videoName} />
                     <section>
                         <h3>{props.projectList[projectIndex].skillsShowcased}</h3>
 
@@ -43,7 +43,7 @@ function SingleProjectPage(props) {
                     </section>
                 </section>
             </main>
-        </div>
+        </div >
     );
 }
 

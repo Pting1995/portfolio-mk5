@@ -7,33 +7,27 @@ const imageJson = [
     alt: "Picture of Peter"
   }, {
     name: "danielle-bakery-png",
-    url: imagePath + "danielle-bakery-png.png",
-    className: "static-img",
+    url: imagePath + "danielle-bakery.png",
     alt: "Danielle's bakery showcase"
   }, {
     name: "database-crawler-png",
-    url: imagePath + "database-crawler-png.png",
-    className: "static-img",
+    url: imagePath + "database-crawler.png",
     alt: "database crawler showcase"
   }, {
     name: "fun-finder-png",
-    url: imagePath + "fun-finder-png.png",
-    className: "static-img",
+    url: imagePath + "fun-finder.png",
     alt: "fun finder showcase"
   }, {
     name: "memory-clicker-png",
-    url: imagePath + "memory-clicker-png.png",
-    className: "static-img",
+    url: imagePath + "memory-clicker.png",
     alt: "memory clicker showcase"
   }, {
     name: "employee-organizer-png",
-    url: imagePath + "employee-organizer-png.png",
-    className: "static-img",
+    url: imagePath + "employee-organizer.png",
     alt: "employee organizer showcase"
   }, {
     name: "random-password-generator-png",
-    url: imagePath + "random-password-generator-png.png",
-    className: "static-img",
+    url: imagePath + "random-password-generator.png",
     alt: "random password generator showcase"
   }
 ];
@@ -48,7 +42,7 @@ function searchObj(value) {
   return result;
 }
 
-function getImg(props, srcOnly) {
+function getImg(props) {
 
   const img = searchObj(props.imgName);
 

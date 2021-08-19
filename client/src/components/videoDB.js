@@ -1,34 +1,34 @@
-const imagePath = "../images/";
+const imagePath = "../videos/";
 
 const imageJson = [
   {
     name: "danielle-bakery-video",
-    url: imagePath + "danielle-bakery-video.mp4",
+    url: imagePath + "danielle-bakery.mp4",
     className: "play-video",
     alt: "Danielle's bakery showcase"
   }, {
     name: "database-crawler-video",
-    url: imagePath + "database-crawler-video.mp4",
+    url: imagePath + "database-crawler.mp4",
     className: "play-video",
     alt: "database crawler showcase"
   }, {
     name: "fun-finder-video",
-    url: imagePath + "fun-finder-video.mp4",
+    url: imagePath + "fun-finder.mp4",
     className: "play-video",
     alt: "fun finder showcase"
   }, {
     name: "memory-clicker-video",
-    url: imagePath + "memory-clicker-video.mp4",
+    url: imagePath + "memory-clicker.mp4",
     className: "play-video",
     alt: "memory clicker showcase"
   }, {
     name: "employee-organizer-video",
-    url: imagePath + "employee-organizer-video.mp4",
+    url: imagePath + "employee-organizer.mp4",
     className: "play-video",
     alt: "employee organizer showcase"
   }, {
     name: "random-password-generator-video",
-    url: imagePath + "random-password-generator-video.mp4",
+    url: imagePath + "random-password-generator.mp4",
     className: "play-video",
     alt: "random password generator showcase"
   }
@@ -44,17 +44,21 @@ function searchObj(value) {
   return result;
 }
 
-function getImg(props, srcOnly) {
+function getVideo(props) {
 
-  const img = searchObj(props.imgName);
+  const img = searchObj(props.videoName);
 
   return (
     <>
-      <img className={img?.className} src={img.url} alt={img.alt} width={img?.width} height={img?.height} loading="lazy" />
+      {/* width="320" height="240" */}
+      <video controls autoplay muted>
+        <source src={img.url} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </>
   );
 }
 
 
 
-export default getImg;
+export default getVideo;

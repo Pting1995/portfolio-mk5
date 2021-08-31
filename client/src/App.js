@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import AllProjects from "./pages/allProjects";
-import SingleProject from "./pages/singleProject";
+import OverviewProjectPage from "./pages/overviewProjectPage";
+import SingleProjectPage from "./pages/singleProjectPage";
 import Header from "./components/header";
 
 import projectList from "./components/projectList.json"
@@ -15,10 +15,10 @@ function App() {
 
         <Switch>
           <Route exact path="/">
-            <AllProjects projectList={projectList} />
+            <OverviewProjectPage projectList={projectList} />
           </Route>
           <Route exact path={"/project/:projectName"}>
-            <SingleProject projectList={projectList} />
+            <SingleProjectPage projectList={projectList} />
           </Route>
         </Switch>
 

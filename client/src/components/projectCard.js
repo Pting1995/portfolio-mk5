@@ -10,9 +10,15 @@ function projectCard(props) {
                 <Link to={`/project/${props.url}`}>
                     <div className="card">
                         <article className="project">
-                            {/* <h2>Project: {props.projectName}</h2> */}
+
                             <figure>
                                 <ImgDB imgName={props.imgName} />
+                                <div>
+                                    <h2 className="appear-on-hover">Project: {props.projectName}</h2>
+                                    <p className="appear-on-hover">Technologies: {props.techUsed}</p>
+
+                                </div>
+
                             </figure>
                         </article>
                     </div>

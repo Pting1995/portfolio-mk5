@@ -1,5 +1,4 @@
 .projects {
-    margin: 1rem 0;
     a {
         text-decoration: none;
         color: map-get($color-palette, light);
@@ -22,6 +21,25 @@
                 transform: scale(1.03) translateY(0rem);
                 cursor: pointer;
             }
+        }
+        .appear-on-hover {
+            display: none;
+            // white-space: nowrap;
+            // overflow:hidden;
+            // text-overflow:ellipsis;
+        }
+        div {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: 0;
+        }
+        &:hover > div {
+            background-color: map-get($color-palette, black);
+        }
+        &:hover > div > .appear-on-hover {
+            display: block;
         }
     }
 

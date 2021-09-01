@@ -1,5 +1,4 @@
 .project-overview {
-    margin-top: 1rem;
     a {
         text-decoration: none;
         color: map-get($color-palette, light);
@@ -13,6 +12,7 @@
     figure {
     overflow: hidden;
     position: relative;
+    
         img {
             transition: transform .3s;
             &:hover {

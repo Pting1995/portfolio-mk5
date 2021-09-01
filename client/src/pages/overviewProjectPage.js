@@ -5,9 +5,10 @@ import AboutMe from "../components/aboutMe"
 function Home(props) {
     console.log(props)
     return (
-        <div className="App">
-            <main className="project-overview has-two-col-1-3">
-                <AboutMe />
+        <div className="App has-two-col-1-3">
+            <AboutMe />
+            <main className="project-overview">
+
                 <section className="has-two-col">
                     {props.projectList.map((project, index) => {
                         return (<ProjectCard

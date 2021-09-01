@@ -11,12 +11,6 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-size: 16px;
-  @include bp-tablet {
-    font-size: 14px;
-  }
-  @include bp-mobile {
-    font-size: 12px;
-  }
 }
 
 h1,

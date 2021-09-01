@@ -34,15 +34,15 @@ function SingleProjectPage(props) {
                 <AboutMe />
                 <section className="project">
                     <VideoDB videoName={props.projectList[projectIndex].videoName} />
-                    <section>
-                        <h3>{props.projectList[projectIndex].skillsShowcased}</h3>
-
-                        <p>{props.projectList[projectIndex].projectDescription}</p>
-
-                        <div className="btn-group" id="btn-grid">
-                            <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank">GitHub Repo</a>
-                            <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].deployedLink} target="_blank">Live Site</a>
+                    <section className="has-two-col">
+                        <div>
+                            <h3>{props.projectList[projectIndex].skillsShowcased}</h3>
+                            <div className="btn-group" id="btn-grid">
+                                <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank">GitHub Repo</a>
+                                <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].deployedLink} target="_blank">Live Site</a>
+                            </div>
                         </div>
+                        <p>{props.projectList[projectIndex].projectDescription}</p>
                     </section>
                 </section>
             </main>

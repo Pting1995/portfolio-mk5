@@ -6,9 +6,9 @@ function Home(props) {
     console.log(props)
     return (
         <div className="App">
-            <main className="has-two-col-1-3">
+            <main className="project-overview has-two-col-1-3">
                 <AboutMe />
-                <section className="projects has-two-col">
+                <section className="has-two-col">
                     {props.projectList.map((project, index) => {
                         return (<ProjectCard
                             key={index}

@@ -13,17 +13,17 @@ function projectCard(props) {
 
                             <figure>
                                 <ImgDB imgName={props.imgName} />
-                                <div>
+                                <div class="project-description">
                                     <h2 className="appear-on-hover">Project: {props.projectName}</h2>
                                     <p className="appear-on-hover">Technologies: {props.techUsed}</p>
-
                                 </div>
-
+                                <div className="see-more">
+                                    <p className="appear-on-hover">Click to see full project</p>
+                                </div>
                             </figure>
                         </article>
                     </div>
                 </Link>
-
             </div>
         </>
     );

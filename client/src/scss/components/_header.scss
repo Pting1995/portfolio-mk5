@@ -4,7 +4,7 @@ header {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.80);
-    z-index: 1000;
+    z-index: 10;
 
     margin-bottom: 1rem;
 
@@ -28,14 +28,18 @@ header {
             .myName {
                 font-size: 2rem;
                 color: map-get($color-palette, tertiary);
+
+                margin-left: 1rem;
             }
             
             &.primary-nav {
                 display: grid;
                 grid-template-columns: repeat(3, fit-content(50px));
-                grid-gap: 1.75rem;
+                grid-gap: 1rem;
                 justify-content: end;
                 justify-items: end;
+
+                margin-right: 1rem;
             }
 
             a {

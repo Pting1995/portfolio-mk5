@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import VideoDB from "../components/videoDB"
+import AboutMe from "../components/aboutMe"
 
 function SingleProjectPage(props) {
 
@@ -28,7 +29,9 @@ function SingleProjectPage(props) {
     return (
 
         <div className="App">
-            <main>
+
+            <main className="project-single has-two-col-1-3">
+                <AboutMe />
                 <section className="project">
                     <VideoDB videoName={props.projectList[projectIndex].videoName} />
                     <section>

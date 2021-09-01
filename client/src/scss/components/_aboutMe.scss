@@ -1,4 +1,8 @@
 .aboutMe {
     position: sticky;
     top: 0px;
+
+    @include bp-tablet {
+        position: relative;
+    }
 }

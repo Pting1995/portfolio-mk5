@@ -1,4 +1,8 @@
-.project-overview {
+.overview-container {
+    max-width: 100%;
+
+    .project-overview {
+        padding: 1rem 0;
     a {
         text-decoration: none;
         color: map-get($color-palette, light);
@@ -10,9 +14,8 @@
 
     // zoom on hover
     figure {
-    overflow: hidden;
     position: relative;
-    
+    overflow: hidden;
         img {
             transition: transform .3s;
             &:hover {
@@ -24,8 +27,7 @@
             position: absolute;
             width: 100%;
             left: 0;
-            top: 0;
-            // bottom: 0;
+            bottom: 0;
             h2 {
                 margin: .5rem;
                 line-height: 1.5rem;
@@ -33,14 +35,6 @@
             p {
                 margin: 0 .5rem .5rem .5rem;
                 
-            }
-        }
-        .see-more {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            p {
-                margin: .5rem;
             }
         }
         &:hover > div {
@@ -58,4 +52,6 @@
     .featured {
         grid-column: 1 / -1;
     }
+}
+
 }

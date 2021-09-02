@@ -1,6 +1,24 @@
-.project-single {
+.single-project-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    .project-single {
+    padding: 1rem 0;
     video {
         max-width: 100%;
         cursor: pointer;
     }
+    h2 {
+        font-size: 3rem;
+        margin: 0;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+    .project-details {
+        width: 60%;
+    }
+}
 }

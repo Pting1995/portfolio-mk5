@@ -27,26 +27,26 @@ function SingleProjectPage(props) {
     });
 
     return (
-
-        <div className="App">
-
-            <main className="project-single has-two-col-1-3">
+        <div className="single-project-container">
+            <div className="App has-two-col-1-3">
                 <AboutMe />
-                <section className="project">
+                <main className="project-single project">
+                    <h2>{props.projectList[projectIndex].projectName}</h2>
                     <VideoDB videoName={props.projectList[projectIndex].videoName} />
-                    <section className="has-two-col">
-                        <div>
-                            <h3>{props.projectList[projectIndex].skillsShowcased}</h3>
-                            <div className="btn-group" id="btn-grid">
-                                <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank">GitHub Repo</a>
-                                <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].deployedLink} target="_blank">Live Site</a>
-                            </div>
-                        </div>
+                    <section className="project-details">
+                        <h3>Skills Showcased: {props.projectList[projectIndex].skillsShowcased}</h3>
+                        <h3>Technology Used: {props.projectList[projectIndex].techUsed}</h3>
                         <p>{props.projectList[projectIndex].projectDescription}</p>
+
+                        <div className="btn-group" id="btn-grid">
+                            <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank">GitHub Repo</a>
+                            <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].deployedLink} target="_blank">Live Site</a>
+                        </div>
+
                     </section>
-                </section>
-            </main>
-        </div >
+                </main>
+            </div >
+        </div>
     );
 }
 

@@ -1,25 +1,31 @@
 .aboutMe {
     position: sticky;
     top: 0px;
+    padding: 1rem 0;
 
     @include bp-tablet {
         position: relative;
     }
 
+    img {
+        border-radius: 50%;
+    }
     nav {
-        
         margin: 1rem 1rem 0 1rem;
     }
     h1 {
-        margin-top: 1rem;
+        font-size: 2rem;
+        margin-top: 0;
         margin-bottom: 0;
     }
     p {
+        font-size: 1.2rem;
         margin-top: 1rem;
         margin-bottom: 0;
     }
 
     a {
+        font-size: 1.2rem;
         display: block;
         color: map-get($color-palette, light);
         text-decoration: underline;

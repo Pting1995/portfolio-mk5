@@ -8,17 +8,15 @@ function projectCard(props) {
         <>
             <div className={props.className}>
                 <Link to={`/project/${props.url}`}>
-                    <div className="card">
-                        <article className="project">
-                            <figure>
-                                <ImgDB imgName={props.imgName} />
-                                <div class="project-description">
-                                    <h2 className="appear-on-hover">Project: {props.projectName}</h2>
-                                    <p className="appear-on-hover">Technologies: {props.techUsed}</p>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
+                    <article className="project">
+                        <figure>
+                            <ImgDB imgName={props.imgName} />
+                            <div class="project-description">
+                                <h2 className="appear-on-hover">Project: {props.projectName}</h2>
+                                <p className="appear-on-hover">Technologies: {props.techUsed}</p>
+                            </div>
+                        </figure>
+                    </article>
                 </Link>
             </div>
         </>

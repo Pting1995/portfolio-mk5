@@ -29,21 +29,25 @@
             width: 100%;
             left: 0;
             bottom: 0;
+            background-color: rgba(0, 0, 0, 0.856);
+            backdrop-filter: blur(5px);
             h2 {
                 margin: .5rem;
                 line-height: 1.5rem;
             }
             p {
                 margin: 0 .5rem .5rem .5rem;
-                
             }
         }
-        &:hover > div {
+        &:hover > .project-description {
             background-color: rgba(0, 0, 0, 0.856);
             backdrop-filter: blur(5px);
         }
         .appear-on-hover {
             display: none;
+            @include bp-tablet {
+                display: block;
+            }
         }
         &:hover > div > .appear-on-hover {
             display: block;

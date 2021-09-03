@@ -36,6 +36,10 @@ function SingleProjectPage(props) {
                         <VideoDB videoName={props.projectList[projectIndex].videoName} />
                         <section className="has-two-col">
                             <div className="project-info-important">
+                                <div className="btn-group" id="project-btn">
+                                    <a className="btn has-light-text has-dark-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank">GitHub Repo</a>
+                                    <a className="btn has-light-text has-dark-bg-color" href={props.projectList[projectIndex].deployedLink} target="_blank">Live Site</a>
+                                </div>
                                 <h3>Skills Showcased: {props.projectList[projectIndex].skillsShowcased}</h3>
                                 <h3>Technology Used: {props.projectList[projectIndex].techUsed}</h3>
                             </div>
@@ -45,10 +49,7 @@ function SingleProjectPage(props) {
 
 
                         </section>
-                        <div className="btn-group" id="project-btn">
-                            <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank">GitHub Repo</a>
-                            <a className="btn has-dark-text has-primary-bg-color" href={props.projectList[projectIndex].deployedLink} target="_blank">Live Site</a>
-                        </div>
+
                     </div>
 
                 </main>

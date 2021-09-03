@@ -3,7 +3,6 @@ import ProjectCard from "../components/projectCard.js"
 import AboutMe from "../components/aboutMe"
 
 function Home(props) {
-    console.log(props)
     return (
         <div className="overview-container">
             <div className="App has-two-col-1-3">

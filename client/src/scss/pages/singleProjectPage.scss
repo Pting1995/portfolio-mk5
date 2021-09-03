@@ -1,24 +1,40 @@
 .single-project-container {
-    max-width: 1800px;
+    max-width: 100%;
     margin: 0 auto;
+
     .project-single {
-    padding: 1rem 0;
-    video {
-        max-width: 100%;
-        cursor: pointer;
+    padding: 1rem;
+        div {
+            margin: 0 auto;
+            max-width: 1500px;
+            position: relative;
+            h2 {
+                font-size: 3rem;
+                margin: 0;
+                @include bp-laptop {
+                    font-size: 2rem;
+                }
+            }
+            video {
+                max-width: 100%;
+                cursor: pointer;
+                margin-bottom: 1rem;
+            }
+            .project-info-important {
+                background-color: map-get($color-palette, secondary);
+                color: map-get($color-palette, black);
+                height: min-content;
+                h3 {
+                    font-size: 1.5rem;
+                    margin: 1rem 0;
+                    padding: 0 1rem;
+                }
+                
+            }
+            p {
+                font-size: 1.3rem;
+                margin: 0;
+            }
+        }
     }
-    h2 {
-        font-size: 3rem;
-        margin: 0;
-    }
-    h3 {
-        font-size: 1.5rem;
-    }
-    p {
-        font-size: 1.3rem;
-    }
-    .project-details {
-        width: 60%;
-    }
-}
 }

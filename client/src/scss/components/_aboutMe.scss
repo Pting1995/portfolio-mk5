@@ -1,21 +1,28 @@
-.aboutMe {
+.about-me-container {
+    background-color: map-get($color-palette, secondary);
+    color: map-get($color-palette, black);
+}
+.about-me {
     position: sticky;
     top: 0px;
-    padding: 1rem 0;
+    padding: 1rem;
+    max-height: calc(100vh - 2rem);
 
     @include bp-tablet {
         position: relative;
     }
+    nav {
+        margin: 0 1rem 0 1rem;
+    }
 
     img {
+        margin-top: 3rem;
         border-radius: 50%;
     }
-    nav {
-        margin: 1rem 1rem 0 1rem;
-    }
+    
     h1 {
         font-size: 2rem;
-        margin-top: 0;
+        margin-top: 1rem;
         margin-bottom: 0;
     }
     p {
@@ -27,7 +34,7 @@
     a {
         font-size: 1.2rem;
         display: block;
-        color: map-get($color-palette, light);
+        color: map-get($color-palette, black);
         text-decoration: underline;
     }
 }

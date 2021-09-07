@@ -22,7 +22,7 @@
             }
             .project-info-important {
                 background-color: map-get($color-palette, secondary);
-                color: map-get($color-palette, black);
+                color: map-get($color-palette, light);
                 height: min-content;
                 h3 {
                     font-size: 1.5rem;

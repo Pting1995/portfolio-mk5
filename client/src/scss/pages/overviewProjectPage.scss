@@ -47,10 +47,18 @@
             display: none;
             @include bp-tablet {
                 display: block;
+                &.hide-on-mobile {
+                    display: none;
+                }
             }
         }
         &:hover > div > .appear-on-hover {
             display: block;
+            @include bp-tablet {
+            &.hide-on-mobile {
+                display: none;
+            }
+        }
         }
     }
 

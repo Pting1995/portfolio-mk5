@@ -45,14 +45,18 @@ $font-stack: 'Quicksand', sans-serif;
 
 $color-palette: (
   primary: #b9faf8,
-  secondary: #b8d0eb,
+  secondary: #032533,
   tertiary: rgb(14,202,240),
   // primary: white,
   // secondary: black,
   light: #ffffff,
-  dark: #2E3653,
+  dark: #003249,
   black: black
 );
+
+// tan and gun metal 
+// EAE0D5
+// 1D282D
 
 @each $color, $code in $color-palette {
   .has-#{$color}-bg-color {

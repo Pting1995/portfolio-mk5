@@ -13,7 +13,7 @@ function projectCard(props) {
                             <ImgDB imgName={props.imgName} />
                             <div class="project-description">
                                 <h2 className="appear-on-hover">Project: {props.projectName}</h2>
-                                <p className="appear-on-hover">Technologies: {props.techUsed}</p>
+                                <p className="appear-on-hover hide-on-mobile">Technologies: {props.techUsed}</p>
                             </div>
                         </figure>
                     </article>

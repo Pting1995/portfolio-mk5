@@ -1,6 +1,6 @@
 .about-me-container {
     background-color: map-get($color-palette, secondary);
-    color: map-get($color-palette, black);
+    color: map-get($color-palette, light);
 }
 .about-me {
     position: sticky;
@@ -41,7 +41,7 @@
     a {
         font-size: 1.2rem;
         display: block;
-        color: map-get($color-palette, black);
+        color: map-get($color-palette, light);
         text-decoration: underline;
     }
 }

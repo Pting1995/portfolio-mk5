@@ -1,10 +1,21 @@
 [
     {
+        "projectName": "Pindrop Network",
+        "url": "Pindrop",
+        "skillsShowcased": "Collaboration with client and Designers, Front-End Development, React, NPM Integration, SCSS, Gulp, SVG",
+        "techUsed": "React, 3rd Party NPM Packages, SCSS, Gulp, SVG files",
+        "projectDescription": "This application was developed for a start-up named Pindrop Network. I learned advanced development workflows utilizing SCSS and then optimized the SCSS files using Gulp. Gulp optimized my code by minifying the code, grouping CSS media queries and adding prefixer elements for browser support. Mediating conversations with designers and the client?",
+        "imgName": "pindrop-png",
+        "videoName": "pindrop-video",
+        "deployedLink": "https://www.pindropnetwork.com/",
+        "gitHubLink": "https://github.com/Pting1995/pindrop-react"
+    },
+    {
         "projectName": "E-Commerce Bakery",
         "url": "Danielle",
         "skillsShowcased": "Full Stack Development, React, React State, Local Storage, Bootstrap, Sequelize, Stripe Integration",
-        "techUsed": "React, Sequelize, Stripe API, HTTP Requests",
-        "projectDescription": "This is a full-stack React application built for San Francisco-based baker Danielle M. Estrella. The application integrates e-commerce elements to give the site full functionality as a business development tool. Guests to the site may view the complete menu, place orders, view her photo gallery, and more! Cart data persistence is accomplished using local storage and payments are processed using the Stripe payment API. Her menu is saved in a Sequelize database and is easily editable using the admin login which allows her to update, delete and create new menu items.",
+        "techUsed": "React, Sequelize Database, Stripe API, HTTP Requests",
+        "projectDescription": "This is a full-stack React application built for San Francisco-based baker Danielle M. Estrella. The application integrates e-commerce elements to give the site full functionality as a business development tool. Guests to the site may view the complete menu, place orders, view her photo gallery, and more! Shoppers do not have to create an account to shop because cart data persistence is accomplished using local storage. Then payments are processed using the Stripe payment API. Her menu is saved in a Sequelize database and is easily editable using the admin login which allows her to update, delete and create new menu items.",
         "imgName": "danielle-bakery-png",
         "videoName": "danielle-bakery-video",
         "deployedLink": "https://danielle-m-estrella.herokuapp.com/",

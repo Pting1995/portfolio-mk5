@@ -6,6 +6,10 @@ const imageJson = [
     url: imagePath + "purrito.png",
     alt: "Picture of Peter"
   }, {
+    name: "pindrop-png",
+    url: imagePath + "pindrop.png",
+    alt: "Pindrop Landing Page Showcase"
+  }, {
     name: "danielle-bakery-png",
     url: imagePath + "danielle-bakery.png",
     alt: "Danielle's bakery showcase"

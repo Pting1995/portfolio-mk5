@@ -2,6 +2,11 @@ const imagePath = "../videos/";
 
 const imageJson = [
   {
+    name: "pindrop-video",
+    url: imagePath + "pindrop.mp4",
+    className: "play-video",
+    alt: "Pindrop Network Landing Page showcase"
+  }, {
     name: "danielle-bakery-video",
     url: imagePath + "danielle-bakery.mp4",
     className: "play-video",

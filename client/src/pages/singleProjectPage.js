@@ -37,7 +37,7 @@ function SingleProjectPage(props) {
                         <section className="has-two-col">
                             <div className="project-info-important">
                                 <div className="btn-group" id="project-btn">
-                                    <a className="btn has-light-text has-dark-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank">GitHub Repo</a>
+                                    {props.projectList[projectIndex].gitHubLink ? <a className="btn has-light-text has-dark-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank">GitHub Repo</a> : null}
                                     <a className="btn has-light-text has-dark-bg-color" href={props.projectList[projectIndex].deployedLink} target="_blank">Live Site</a>
                                 </div>
                                 <h3>Skills Showcased: {props.projectList[projectIndex].skillsShowcased}</h3>

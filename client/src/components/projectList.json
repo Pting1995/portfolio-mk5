@@ -7,8 +7,7 @@
         "projectDescription": "This application was developed for a start-up named Pindrop Network. I learned advanced development workflows utilizing SCSS and then optimized the SCSS files using Gulp. Gulp optimized my code by minifying the code, grouping CSS media queries and adding prefixer elements for browser support. I also mediated conversations with designers and the client.",
         "imgName": "pindrop-png",
         "videoName": "pindrop-video",
-        "deployedLink": "https://www.pindropnetwork.com/",
-        "gitHubLink": "https://github.com/Pting1995/pindrop-react"
+        "deployedLink": "https://www.pindropnetwork.com/"
     },
     {
         "projectName": "E-Commerce Bakery",

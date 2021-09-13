@@ -11,7 +11,7 @@ function projectCard(props) {
                     <article className="project">
                         <figure>
                             <ImgDB imgName={props.imgName} />
-                            <div class="project-description">
+                            <div className="project-description">
                                 <h2 className="appear-on-hover">Project: {props.projectName}</h2>
                                 <p className="appear-on-hover hide-on-mobile">Technologies: {props.techUsed}</p>
                             </div>

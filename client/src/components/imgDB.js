@@ -1,4 +1,4 @@
-const imagePath = "../images/";
+const imagePath = "/portfolio-mk5/images/";
 
 const imageJson = [
   {

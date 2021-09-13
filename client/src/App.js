@@ -9,7 +9,7 @@ import projectList from "./components/projectList.json"
 function App() {
   return (
     <>
-      <Router basename="/peterting">
+      <Router basename="portfolio-mk5">
         <Switch>
           <Route exact path="/">
             <OverviewProjectPage projectList={projectList} />

@@ -9,7 +9,7 @@ import projectList from "./components/projectList.json"
 function App() {
   return (
     <>
-      <BrowserRouter basename="/portfolio-mk5">
+      <Router basename="/portfolio-mk5">
         <Switch>
           <Route exact path={'/'}>
             <OverviewProjectPage projectList={projectList} />
@@ -20,7 +20,7 @@ function App() {
         </Switch>
 
         {/* <Footer /> */}
-      </BrowserRouter>
+      </Router>
     </>
   );
 }

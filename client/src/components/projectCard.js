@@ -7,7 +7,7 @@ function projectCard(props) {
     return (
         <>
             <div className={props.className}>
-                <Link to={`/project/${props.url}`}>
+                <Link to={`portfolio-mk5/project/${props.url}`}>
                     <article className="project">
                         <figure>
                             <ImgDB imgName={props.imgName} />

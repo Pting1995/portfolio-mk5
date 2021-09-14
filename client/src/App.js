@@ -9,12 +9,12 @@ import projectList from "./components/projectList.json"
 function App() {
   return (
     <>
-      <Router basename="portfolio-mk5">
+      <Router >
         <Switch>
-          <Route exact path="/">
+          <Route exact path={process.env.PUBLIC_URL + '/'}>
             <OverviewProjectPage projectList={projectList} />
           </Route>
-          <Route exact path={"/project/:projectName"}>
+          <Route exact path={process.env.PUBLIC_URL + "/project/:projectName"}>
             <SingleProjectPage projectList={projectList} />
           </Route>
         </Switch>

@@ -37,17 +37,13 @@ function SingleProjectPage(props) {
                         <section className="has-two-col">
                             <div className="project-info-important">
                                 <div className="btn-group" id="project-btn">
+                                    {props.projectList[projectIndex].deployedLink ? <a className="btn has-light-text has-dark-bg-color" href={props.projectList[projectIndex].deployedLink} target="_blank">Live Site</a> : null}
                                     {props.projectList[projectIndex].gitHubLink ? <a className="btn has-light-text has-dark-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank">GitHub Repo</a> : null}
-                                    <a className="btn has-light-text has-dark-bg-color" href={props.projectList[projectIndex].deployedLink} target="_blank">Live Site</a>
                                 </div>
                                 <h3>Skills Showcased: {props.projectList[projectIndex].skillsShowcased}</h3>
                                 <h3>Technology Used: {props.projectList[projectIndex].techUsed}</h3>
                             </div>
-
                             <p>{props.projectList[projectIndex].projectDescription}</p>
-
-
-
                         </section>
 
                     </div>

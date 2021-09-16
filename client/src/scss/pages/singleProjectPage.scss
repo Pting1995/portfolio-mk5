@@ -9,6 +9,7 @@
             max-width: 1500px;
             position: relative;
             h2 {
+                display: inline-block;
                 font-size: 3rem;
                 margin: 0 0 .5rem 0;
                 @include bp-laptop {
@@ -22,7 +23,7 @@
                 margin-bottom: 1rem;
             }
             .project-info-important {
-                background-color: map-get($color-palette, secondary);
+                background-color: map-get($color-palette, primary);
                 color: map-get($color-palette, light);
                 height: min-content;
                 h3 {
@@ -38,8 +39,15 @@
             }
         }
     }
+    #back-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include bp-mobile-l {
+            display: none;
+        }
+    }
     #project-btn {
-        padding-top: 1rem;
-        padding-left: 1rem;
+        padding: 1rem 1rem 0 1rem;
     }
 }

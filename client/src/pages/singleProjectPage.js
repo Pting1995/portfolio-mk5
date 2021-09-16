@@ -32,13 +32,15 @@ function SingleProjectPage(props) {
                 <main className="project-single project">
                     <div>
                         <h2>{props.projectList[projectIndex].projectName}</h2>
-
+                        <div className="btn-group" id="back-btn">
+                            <a className="btn has-light-text has-primary-bg-color" href="/portfolio-mk5" target="_blank">Back to Projects</a>
+                        </div>
                         <VideoDB videoName={props.projectList[projectIndex].videoName} />
                         <section className="has-two-col">
                             <div className="project-info-important">
                                 <div className="btn-group" id="project-btn">
-                                    {props.projectList[projectIndex].deployedLink ? <a className="btn has-light-text has-dark-bg-color" href={props.projectList[projectIndex].deployedLink} target="_blank">Live Site</a> : null}
-                                    {props.projectList[projectIndex].gitHubLink ? <a className="btn has-light-text has-dark-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank">GitHub Repo</a> : null}
+                                    {props.projectList[projectIndex].deployedLink ? <a className="btn has-light-text has-secondary-bg-color" href={props.projectList[projectIndex].deployedLink} target="_blank">Live Site</a> : null}
+                                    {props.projectList[projectIndex].gitHubLink ? <a className="btn has-light-text has-secondary-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank">GitHub Repo</a> : null}
                                 </div>
                                 <h3>Skills Showcased: {props.projectList[projectIndex].skillsShowcased}</h3>
                                 <h3>Technology Used: {props.projectList[projectIndex].techUsed}</h3>

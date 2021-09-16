@@ -1,47 +1,54 @@
-.about-me-container {
-    background-color: map-get($color-palette, secondary);
+.about-me-slider-track {
+    background-color: map-get($color-palette, primary);
     color: map-get($color-palette, light);
 }
-.about-me {
+.about-me-slider {
     position: sticky;
     top: 0px;
-    padding: 1rem;
-    height: calc(100vh - 2rem);
 
+    height: calc(100vh - 2rem);
+    width: 340px;
+    
     @include bp-tablet {
         position: relative;
         height: auto;
-        max-width: 340px;
-        margin: 0 auto;
+        
+        margin: 1rem auto;
     }
-    nav {
-        margin: 0 1rem 0 1rem;
-    }
+    .about-me {
+        padding: 1rem;
+        nav {
+            text-align: right;
+            margin: 0;
+        }
 
-    img {
-        max-width: 300px;
-        margin-top: 3rem;
-        border-radius: 50%;
-        @include bp-tablet {
+        img {
+            margin: 3rem auto 0 auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            @include bp-tablet {
+                margin: 1rem auto 0 auto;
+            }
+        }
+        
+        h1 {
+            font-size: 2rem;
             margin-top: 1rem;
+            margin-bottom: 0;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+
+        a {
+            font-size: 1.2rem;
+            display: block;
+            color: map-get($color-palette, light);
+            text-decoration: underline;
         }
     }
     
-    h1 {
-        font-size: 2rem;
-        margin-top: 1rem;
-        margin-bottom: 0;
-    }
-    p {
-        font-size: 1.2rem;
-        margin-top: 1rem;
-        margin-bottom: 0;
-    }
-
-    a {
-        font-size: 1.2rem;
-        display: block;
-        color: map-get($color-palette, light);
-        text-decoration: underline;
-    }
 }

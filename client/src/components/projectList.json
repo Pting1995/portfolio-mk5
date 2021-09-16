@@ -12,8 +12,8 @@
     {
         "projectName": "E-Commerce Bakery",
         "url": "Danielle",
-        "skillsShowcased": "Full Stack Development, React, React State & Hooks, Local Storage, Sequelize, Stripe Integration, Axios Requests",
-        "techUsed": "React, Sequelize Database, Stripe API, HTTP Requests",
+        "skillsShowcased": "Full Stack Development, React, React State & Hooks, Local Storage, Sequelize, Stripe Integration, HTTP Requests",
+        "techUsed": "React, Sequelize Database, Stripe API, Axios, Local Storage",
         "projectDescription": "This is a full-stack React application built for San Francisco-based baker Danielle M. Estrella. The application integrates e-commerce elements to give the site full functionality as a business development tool. Guests to the site may view the complete menu, place orders, view her photo gallery, and more! Shoppers do not have to create an account to shop because cart data persistence is accomplished using local storage. Then payments are processed using the Stripe payment API. Her menu is saved in a Sequelize database and is easily editable using the admin login which allows her to update, delete and create new menu items.",
         "imgName": "danielle-bakery-png",
         "videoName": "danielle-bakery-video",

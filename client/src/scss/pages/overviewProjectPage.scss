@@ -29,7 +29,7 @@
             width: 100%;
             left: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.856);
+            background-color: rgba(0, 0, 0, 0.822);
             backdrop-filter: blur(5px);
             h2 {
                 margin: .5rem;
@@ -40,7 +40,7 @@
             }
         }
         &:hover > .project-description {
-            background-color: rgba(0, 0, 0, 0.856);
+            background-color: rgba(0, 0, 0, 0.822);
             backdrop-filter: blur(5px);
         }
         .appear-on-hover {

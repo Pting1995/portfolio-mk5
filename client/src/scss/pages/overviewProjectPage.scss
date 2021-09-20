@@ -18,7 +18,7 @@
     position: relative;
     overflow: hidden;
         img {
-            transition: transform .3s;
+            transition: transform .3s ease;
             &:hover {
                 transform: scale(1.03) translateY(0rem);
                 cursor: pointer;

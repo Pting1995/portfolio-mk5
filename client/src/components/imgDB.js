@@ -2,9 +2,9 @@ const imagePath = "/portfolio-mk5/images/";
 
 const imageJson = [
   {
-    name: "itme",
-    url: imagePath + "purrito.png",
-    alt: "Picture of Peter"
+    name: "peter",
+    url: imagePath + "peter.png",
+    alt: "Peter's Photo"
   }, {
     name: "pindrop-png",
     url: imagePath + "pindrop.png",

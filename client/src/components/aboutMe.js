@@ -14,7 +14,7 @@ function AboutMe() {
                             <a href="/portfolio-mk5/assets/Peter Ting's Resume.pdf" target="_blank">My Resume</a>
                         </nav>
                         <figure>
-                            <ImgDB imgName="itme" />
+                            <ImgDB imgName="peter" />
                         </figure>
                         <h1>Hey there, I'm Peter!</h1>
                         <p>I am currently seeking full-time opportunities in web development. Please contact me if any of my projects interest you!</p>

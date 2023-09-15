@@ -4,7 +4,7 @@
         "url": "Deck",
         "skillsShowcased": "React, Managing State, Mobile-friendly design, NPM Integration, Conditional Rendering, Randomization",
         "techUsed": "React, NPM Packages, GH Pages",
-        "projectDescription": "This application was made to simulate a deck of cards! Some features include being able to toggle visibility of cards in your hand, deck and discard pile as well as toggle visibility of card history! You can also choose which cards to draw, return or discard or leave it up to fate by randomly drawing a card from the deck or randomly discarding a card from your hand. If you lose track of what events happened, you can view the history of all changes to your cards",
+        "projectDescription": "This application was made to simulate a deck of cards! Some features include being able to toggle visibility of cards in your hand, deck and discard pile as well as toggle visibility of card history! You can also choose which cards to draw, return or discard. Alternatively, you can leave it up to fate by randomly drawing a card from the deck or randomly discarding a card from your hand. If you lose track of what events happened, you can view the history of all changes to your cards.",
         "imgName": "react-card-deck-png",
         "videoName": "react-card-deck-video",
         "deployedLink": "https://pting1995.github.io/react-card-deck/",

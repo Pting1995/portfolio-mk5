@@ -33,6 +33,10 @@ const imageJson = [
     name: "random-password-generator-png",
     url: imagePath + "random-password-generator.png",
     alt: "random password generator showcase"
+  }, {
+    name: "react-card-deck-png",
+    url: imagePath + "react-card-deck.png",
+    alt: "react card deck showcase"
   }
 ];
 

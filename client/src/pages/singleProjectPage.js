@@ -11,19 +11,19 @@ function SingleProjectPage(props) {
 
     let projectList = props.projectList
 
-    function findProject(projectName, projectList) {
+    useEffect(() => {
+        function findProject(projectName, projectList) {
 
-        for (var i = 0; i < projectList.length; i++) {
+            for (var i = 0; i < projectList.length; i++) {
 
-            if (projectName == projectList[i].url) {
-                return (i)
+                if (projectName === projectList[i].url) {
+                    return (i)
+                }
             }
         }
-    }
 
-    useEffect(() => {
         setProjectIndex(findProject(projectName, projectList))
-    });
+    }, [projectName, projectList]);
 
     return (
         <div className="single-project-container">
@@ -38,10 +38,13 @@ function SingleProjectPage(props) {
                         <VideoDB videoName={props.projectList[projectIndex].videoName} />
                         <section className="has-two-col">
                             <div className="project-info-important">
-                                <div className="btn-group" id="project-btn">
-                                    {props.projectList[projectIndex].deployedLink ? <a className="btn has-light-text has-secondary-bg-color" href={props.projectList[projectIndex].deployedLink} target="_blank">Live Site</a> : null}
-                                    {props.projectList[projectIndex].gitHubLink ? <a className="btn has-light-text has-secondary-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank">GitHub Repo</a> : null}
-                                </div>
+                                {(props.projectList[projectIndex].deployedLink || props.projectList[projectIndex].gitHubLink) &&
+                                    <div className="btn-group" id="project-btn">
+                                        {props.projectList[projectIndex].deployedLink ? <a className="btn has-light-text has-secondary-bg-color" href={props.projectList[projectIndex].deployedLink} target="_blank" rel="noreferrer">Live Site</a> : null}
+                                        {props.projectList[projectIndex].gitHubLink ? <a className="btn has-light-text has-secondary-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank" rel="noreferrer">GitHub Repo</a> : null}
+                                    </div>
+                                }
+
                                 <h3>Skills Showcased: {props.projectList[projectIndex].skillsShowcased}</h3>
                                 <h3>Technology Used: {props.projectList[projectIndex].techUsed}</h3>
                             </div>

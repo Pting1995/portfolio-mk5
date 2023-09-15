@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectCard from "../components/projectCard.js"
-import ImgDB from "../components/imgDB"
 import AboutMe from "../components/aboutMe"
 
 function Home(props) {

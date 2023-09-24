@@ -11,13 +11,13 @@
         "gitHubLink": "https://github.com/Pting1995/react-card-deck"
     },
     {
-        "projectName": "Pindrop Network",
-        "url": "Pindrop",
-        "skillsShowcased": "React, Mobile-friendly design, NPM Integration, SCSS, Gulp",
-        "techUsed": "React, NPM Packages, SCSS, Gulp, SVG images",
-        "projectDescription": "This application was developed for a start-up named Pindrop Network. I learned advanced development workflows utilizing multiple SCSS files to maintain organization. Then creating a script to automatically optimize the SCSS files and create a new minimized CSS file with the help of Gulp. Gulp optimized my code by minifying the code, grouping CSS media queries and adding prefixer elements for browser support. I also mediated conversations with designers and the client.",
-        "imgName": "pindrop-png",
-        "videoName": "pindrop-video"
+        "projectName": "Loyalty Rewards",
+        "url": "Loyalty-Rewards",
+        "skillsShowcased": "Full Stack Development, Database Management",
+        "techUsed": "WordPress, WooCommerce",
+        "projectDescription": "This is a module for WooCommerce, the e-commerce platform on WordPress. This plugin allows the website owner to assign the amount of loyalty points reward and redeem price for each item sold on the website. This allows the website owner to incentivize shoppers to buy that product, one example is, while the product is new, increasing the loyalty points rewarded upon purchase. Alternatively, this allows shoppers to try items they would've never tried before, for example, when the shopper redeems their points, the website owner can curate their redeemable products with products they want to promote.",
+        "imgName": "loyalty-rewards-png",
+        "videoName": "loyalty-rewards-video"
     },
     {
         "projectName": "E-Commerce Bakery",
@@ -27,8 +27,16 @@
         "projectDescription": "This is a full-stack React application built for San Francisco-based baker Danielle M. Estrella. The application integrates e-commerce elements to give the site full functionality as a business development tool. Guests to the site may view the complete menu, place orders, view her photo gallery, and more! Shoppers do not have to create an account to shop because cart data persistence is accomplished using local storage. Then payments are processed using the Stripe payment API. Her menu is saved in a Sequelize database and is easily editable using the admin login which allows her to update, delete and create new menu items.",
         "imgName": "danielle-bakery-png",
         "videoName": "danielle-bakery-video",
-        "deployedLink": "https://danielle-m-estrella.herokuapp.com/",
         "gitHubLink": "https://github.com/Pting1995/business.builder"
+    },
+    {
+        "projectName": "Pindrop Network",
+        "url": "Pindrop",
+        "skillsShowcased": "React, Mobile-friendly design, NPM Integration, SCSS, Gulp",
+        "techUsed": "React, NPM Packages, SCSS, Gulp, SVG images",
+        "projectDescription": "This application was developed for a start-up named Pindrop Network. I learned advanced development workflows utilizing multiple SCSS files to maintain organization. Then creating a script to automatically optimize the SCSS files and create a new minimized CSS file with the help of Gulp. Gulp optimized my code by minifying the code, grouping CSS media queries and adding prefixer elements for browser support. I also mediated conversations with designers and the client.",
+        "imgName": "pindrop-png",
+        "videoName": "pindrop-video"
     },
     {
         "projectName": "Employee Organizer",

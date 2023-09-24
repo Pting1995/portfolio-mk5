@@ -11,7 +11,7 @@ function AboutMe() {
                             <a href="/portfolio-mk5">My Projects</a>
                             <a href="https://github.com/Pting1995" target="_blank" rel="noreferrer">My Github</a>
                             <a href="https://www.linkedin.com/in/pting002/" target="_blank" rel="noreferrer">My LinkedIn</a>
-                            <a href="/portfolio-mk5/assets/Resume-Peter-Ting.pdf" target="_blank">My Resume</a>
+                            <a href="/portfolio-mk5/assets/Peter-Ting-resume.pdf" target="_blank">My Resume</a>
                         </nav>
                         <figure>
                             <ImgDB imgName="peter" />
@@ -21,7 +21,6 @@ function AboutMe() {
                     </div>
                 </div>
             </section>
-
         </>
     );
 }

@@ -37,6 +37,10 @@ const imageJson = [
     name: "react-card-deck-png",
     url: imagePath + "react-card-deck.png",
     alt: "react card deck showcase"
+  }, {
+    name: "loyalty-rewards-png",
+    url: imagePath + "loyalty-rewards.png",
+    alt: "loyalty rewards showcase"
   }
 ];
 

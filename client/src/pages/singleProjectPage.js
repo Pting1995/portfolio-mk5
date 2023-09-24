@@ -33,7 +33,7 @@ function SingleProjectPage(props) {
                     <div>
                         <h2>{props.projectList[projectIndex].projectName}</h2>
                         <div className="btn-group" id="back-btn">
-                            <a className="btn has-light-text has-primary-bg-color" href="/portfolio-mk5" target="_blank">Back to Projects</a>
+                            <a className="btn has-light-text has-primary-bg-color" href="/portfolio-mk5" target="_blank">◀ All Projects</a>
                         </div>
                         <VideoDB videoName={props.projectList[projectIndex].videoName} />
                         <section className="has-two-col">
@@ -44,7 +44,6 @@ function SingleProjectPage(props) {
                                         {props.projectList[projectIndex].gitHubLink ? <a className="btn has-light-text has-secondary-bg-color" href={props.projectList[projectIndex].gitHubLink} target="_blank" rel="noreferrer">GitHub Repo</a> : null}
                                     </div>
                                 }
-
                                 <h3>Skills Showcased: {props.projectList[projectIndex].skillsShowcased}</h3>
                                 <h3>Technology Used: {props.projectList[projectIndex].techUsed}</h3>
                             </div>

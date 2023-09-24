@@ -41,6 +41,11 @@ const imageJson = [
 		url: imagePath + "react-card-deck.mp4",
 		className: "play-video",
 		alt: "react card deck showcase"
+	}, {
+		name: "loyalty-rewards-video",
+		url: imagePath + "loyalty-rewards.mp4",
+		className: "play-video",
+		alt: "loyalty rewards module showcase"
 	}
 ];
 
@@ -60,7 +65,6 @@ function getVideo(props) {
 
 	return (
 		<>
-
 			<video width="1500" height="800" controls autoPlay muted>
 				<source src={img.url} type="video/mp4" />
 				Your browser does not support the video tag.

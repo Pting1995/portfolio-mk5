@@ -18,8 +18,6 @@ function App() {
             <SingleProjectPage projectList={projectList} />
           </Route>
         </Switch>
-
-        {/* <Footer /> */}
       </Router>
     </>
   );

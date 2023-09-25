@@ -65,7 +65,7 @@ function getVideo(props) {
 
 	return (
 		<>
-			<video width="1500" height="800" controls autoPlay muted>
+			<video width="1500" height="800" controls autoPlay>
 				<source src={img.url} type="video/mp4" />
 				Your browser does not support the video tag.
 			</video>

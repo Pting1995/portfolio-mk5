@@ -13,3 +13,10 @@ Open [http://localhost:3000](http://localhost:3000)
 ### `npm run deploy`
 
 Runs script to publish to gh-pages
+
+todo:
+
+make sidebar collapsible on mobile
+fix mobile video rendering - 1st video always rendering on mobile
+bring viewport to top of page on mobile
+fix tool tip hover on all project pages

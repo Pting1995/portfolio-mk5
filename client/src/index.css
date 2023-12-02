@@ -110,7 +110,7 @@
 	transition: transform .3s ease, -webkit-transform .3s ease
 }
 
-.overview-container .project-overview figure img:hover {
+.overview-container .project-overview figure:hover img {
 	-webkit-transform: scale(1.03) translateY(0);
 	transform: scale(1.03) translateY(0);
 	cursor: pointer

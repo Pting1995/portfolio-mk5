@@ -1,26 +1,33 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import OverviewProjectPage from "./pages/overviewProjectPage";
 import SingleProjectPage from "./pages/singleProjectPage";
+import ErrorPage from "./pages/errorPage"
 
 import projectList from "./components/projectList.json"
 
 
 function App() {
-  return (
-    <>
-      <Router basename="/portfolio-mk5">
-        <Switch>
-          <Route exact path={'/'}>
-            <OverviewProjectPage projectList={projectList} />
-          </Route>
-          <Route exact path={"/project/:projectName"}>
-            <SingleProjectPage projectList={projectList} />
-          </Route>
-        </Switch>
-      </Router>
-    </>
-  );
+	return (
+		<>
+			<BrowserRouter>
+				<Routes>
+					<Route path="/portfolio-mk5" errorElement={<ErrorPage />}>
+						<Route index element={
+							<OverviewProjectPage
+								projectList={projectList}
+							/>
+						} />
+						<Route path="/portfolio-mk5/project/:projectName" element={
+							<SingleProjectPage
+								projectList={projectList}
+							/>
+						} />
+					</Route>
+				</Routes>
+			</BrowserRouter>
+		</>
+	);
 }
 
 export default App;
